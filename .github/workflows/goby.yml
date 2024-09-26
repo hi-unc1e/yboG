@@ -5,7 +5,7 @@ name: goby
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '5/* * * * *'
   release:
     types: [published]
 jobs:
