@@ -25,7 +25,7 @@ jobs:
         pip install pyzipper
     - name: goby
       env: 
-         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         python run.py
     - name: Commit and push if changed
